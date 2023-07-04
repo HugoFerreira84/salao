@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Controle de Diário do Salão de Beleza</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-5 text-white">Controle de Contas do Salão de Beleza</h1>
+            <div class="row mt-5">
+                <div class="col-md-12 offset-md-2 text-white">
+                    <form id="accountForm" class="form-group col-md-10 mb-3">
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="clientName">Nome do Cliente:</label>
+                                <input type="text" class="form-control"
+                                    id="clientName" required>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="service">Serviço:</label>
+                                <input type="text" class="form-control"
+                                    id="service" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="amount">Valor:</label>
+                                <input type="number" class="form-control"
+                                    id="amount" required>
+                            </div>
+                            <div class="form-group col-sm-3 col-md-3">
+                                <label for="employeeName">Nome do Colaborador:</label>
+                                <input type="text" class="form-control"
+                                    id="employeeName" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="commission">Comissão:</label>
+                                <input type="number" class="form-control"
+                                    id="commission" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="expense">Despesa:</label>
+                                <input type="number" class="form-control"
+                                    id="expense" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-10 col-md-10">
+                                <button type="submit" class="btn btn-primary form-control">Adicionar Conta</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 col-sm-11 offset-md-1 justify-content-center">
+                    <table id="accountTable" class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th>Nome do Cliente</th>
+                                <th>Serviço</th>
+                                <th>Valor</th>
+                                <th>Nome do Colaborador</th>
+                                <th>Comissão</th>
+                                <th>Despesa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <div class="form-row">
+                        <div class="text-center form-group col-md-12 mt-4">
+                            <button id="generateInvoiceButton" class="btn btn-success form-control">Gerar Cupom Fiscal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
